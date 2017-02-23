@@ -10,7 +10,7 @@
 		25EC0A6D544DC92D5BD7021E /* libPods-MakerProgress.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53376865BF49C628014E99C7 /* libPods-MakerProgress.a */; };
 		6D9426541E5F64B200437671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9426531E5F64B200437671 /* main.m */; };
 		6D9426571E5F64B200437671 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9426561E5F64B200437671 /* AppDelegate.m */; };
-		6D94265A1E5F64B200437671 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9426591E5F64B200437671 /* ViewController.m */; };
+		6D94265A1E5F64B200437671 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9426591E5F64B200437671 /* LoginViewController.m */; };
 		6D94265D1E5F64B200437671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D94265B1E5F64B200437671 /* Main.storyboard */; };
 		6D9426601E5F64B200437671 /* MakerProgress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D94265E1E5F64B200437671 /* MakerProgress.xcdatamodeld */; };
 		6D9426621E5F64B200437671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D9426611E5F64B200437671 /* Assets.xcassets */; };
@@ -25,8 +25,8 @@
 		6D9426531E5F64B200437671 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D9426551E5F64B200437671 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D9426561E5F64B200437671 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6D9426581E5F64B200437671 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6D9426591E5F64B200437671 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D9426581E5F64B200437671 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6D9426591E5F64B200437671 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		6D94265C1E5F64B200437671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D94265F1E5F64B200437671 /* MakerProgress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakerProgress.xcdatamodel; sourceTree = "<group>"; };
 		6D9426611E5F64B200437671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		6D4C40C41E5F72C9003A3660 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6D4C40C71E5F7308003A3660 /* ViewController */,
+				6D4C40C71E5F7308003A3660 /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,12 +101,13 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		6D4C40C71E5F7308003A3660 /* ViewController */ = {
+		6D4C40C71E5F7308003A3660 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				6D9426581E5F64B200437671 /* ViewController.h */,
-				6D9426591E5F64B200437671 /* ViewController.m */,
+				6D9426581E5F64B200437671 /* LoginViewController.h */,
+				6D9426591E5F64B200437671 /* LoginViewController.m */,
 			);
+			name = Login;
 			path = ViewController;
 			sourceTree = "<group>";
 		};
@@ -151,7 +152,6 @@
 			children = (
 				6D9426531E5F64B200437671 /* main.m */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -286,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D94265A1E5F64B200437671 /* ViewController.m in Sources */,
+				6D94265A1E5F64B200437671 /* LoginViewController.m in Sources */,
 				6D9426571E5F64B200437671 /* AppDelegate.m in Sources */,
 				6D9426541E5F64B200437671 /* main.m in Sources */,
 				6D9426601E5F64B200437671 /* MakerProgress.xcdatamodeld in Sources */,
