@@ -55,13 +55,75 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6D4C40C21E5F728C003A3660 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D9426631E5F64B200437671 /* LaunchScreen.storyboard */,
+				6D94265B1E5F64B200437671 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D4C40C31E5F72C4003A3660 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D4C40C41E5F72C9003A3660 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D4C40C71E5F7308003A3660 /* ViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D4C40C51E5F72D6003A3660 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D4C40C61E5F72E2003A3660 /* AppDelegate */,
+				6D9426521E5F64B200437671 /* Supporting Files */,
+				6D9426611E5F64B200437671 /* Assets.xcassets */,
+				6D9426661E5F64B200437671 /* Info.plist */,
+				6D94265E1E5F64B200437671 /* MakerProgress.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D4C40C61E5F72E2003A3660 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6D4C40C31E5F72C4003A3660 /* Model */,
+				6D9426551E5F64B200437671 /* AppDelegate.h */,
+				6D9426561E5F64B200437671 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6D4C40C71E5F7308003A3660 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6D9426581E5F64B200437671 /* ViewController.h */,
+				6D9426591E5F64B200437671 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6D4C40C81E5F732D003A3660 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6D9426461E5F64B200437671 = {
 			isa = PBXGroup;
 			children = (
-				6D9426511E5F64B200437671 /* MakerProgress */,
-				6D9426501E5F64B200437671 /* Products */,
-				185FBE05A44B7D566AAF39D4 /* Pods */,
 				7223D07CD58E0DE39942F069 /* Frameworks */,
+				6D9426511E5F64B200437671 /* MakerProgress */,
+				185FBE05A44B7D566AAF39D4 /* Pods */,
+				6D9426501E5F64B200437671 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,16 +138,10 @@
 		6D9426511E5F64B200437671 /* MakerProgress */ = {
 			isa = PBXGroup;
 			children = (
-				6D9426551E5F64B200437671 /* AppDelegate.h */,
-				6D9426561E5F64B200437671 /* AppDelegate.m */,
-				6D9426581E5F64B200437671 /* ViewController.h */,
-				6D9426591E5F64B200437671 /* ViewController.m */,
-				6D94265B1E5F64B200437671 /* Main.storyboard */,
-				6D9426611E5F64B200437671 /* Assets.xcassets */,
-				6D9426631E5F64B200437671 /* LaunchScreen.storyboard */,
-				6D9426661E5F64B200437671 /* Info.plist */,
-				6D94265E1E5F64B200437671 /* MakerProgress.xcdatamodeld */,
-				6D9426521E5F64B200437671 /* Supporting Files */,
+				6D4C40C41E5F72C9003A3660 /* Controller */,
+				6D4C40C81E5F732D003A3660 /* Model */,
+				6D4C40C51E5F72D6003A3660 /* Resources */,
+				6D4C40C21E5F728C003A3660 /* View */,
 			);
 			path = MakerProgress;
 			sourceTree = "<group>";
@@ -96,6 +152,7 @@
 				6D9426531E5F64B200437671 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		7223D07CD58E0DE39942F069 /* Frameworks */ = {
@@ -245,6 +302,7 @@
 				6D94265C1E5F64B200437671 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		6D9426631E5F64B200437671 /* LaunchScreen.storyboard */ = {
@@ -253,6 +311,7 @@
 				6D9426641E5F64B200437671 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -352,7 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 57VRXHM8WR;
-				INFOPLIST_FILE = MakerProgress/Info.plist;
+				INFOPLIST_FILE = MakerProgress/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ade.MakerProgress;
@@ -366,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 57VRXHM8WR;
-				INFOPLIST_FILE = MakerProgress/Info.plist;
+				INFOPLIST_FILE = MakerProgress/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ade.MakerProgress;
